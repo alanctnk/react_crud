@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "José Fulano",
+      "email": "fulano@gg.com.br"
+    },
+    {
+      "id": 2,
+      "name": "Maria Silva",
+      "email": "marian@gg.com.br"
+    }
+  ]
+}
