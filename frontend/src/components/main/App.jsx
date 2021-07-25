@@ -4,16 +4,19 @@ import 'font-awesome/css/font-awesome.min.css'
 import './App.css'
 import Logo from '../templates/Logo'
 import Nav from '../templates/Nav'
-import Main from '../templates/Main'
 import Footer from '../templates/Footer'
+import { HashRouter } from 'react-router-dom'
+import Routes from './Routes'
 
 export default function App(props) {
   return (
-    <div className="app">
-      <Logo/> 
-      <Nav/>
-      <Main/>
-      <Footer/>
-    </div>
+    <HashRouter>
+      <div className="app">
+        <Logo/> 
+        <Nav/>
+        <Routes />
+        <Footer/>
+      </div>
+    </HashRouter>
   )
 }

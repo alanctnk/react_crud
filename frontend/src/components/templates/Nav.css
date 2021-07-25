@@ -1,0 +1,56 @@
+aside.menu-area {
+  background-color: var(--bg-dark);
+  box-shadow: 
+    2px 0 10px 0 rgba(0,0,0,0.12),
+    2px 0 15px 0 rgba(0,0,0,0.09);
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: #272727;
+  font-weight: 300;
+  padding: 12px;
+}
+
+.menu a:hover {
+  background: #2193b0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media(max-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .menu a {
+    display: inline;
+    padding: 10px;
+    margin: 0px;
+  }
+  
+  .menu {
+    height: 100%;
+    justify-content: space-around;
+  }
+
+}
+
+@media(max-width: 576px) {
+  .app {
+    grid-template-rows: 
+      var(--logo-height)
+      var(--menu-top-height)
+      1fr
+      var(--footer-height);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "logo"
+      "menu"
+      "content"
+      "footer";
+  }
+}
