@@ -15,8 +15,8 @@
 
 ## Instalação:
 
-1. Execute primeiro o backend -> `npm start` 
-1. Após, frontend -> `npm start` 
+1. Execute primeiro o backend -> `npm install` , após `npm start`.
+1. No frontend -> `npm install` , após `npm start`.
 
 ---
 
